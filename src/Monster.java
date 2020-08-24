@@ -12,6 +12,10 @@ public class Monster {
         return angriffswert;
     }
 
+    public void setAngriffswert(int angriffswert) {
+        this.angriffswert = angriffswert;
+    }
+
     public void recieveDamage(int pDmg){
         if(lebenspunkte-pDmg>0){
             lebenspunkte=lebenspunkte-pDmg;
