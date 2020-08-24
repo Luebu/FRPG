@@ -1,13 +1,14 @@
-public class Krieger extends Held{
+public class Krieger extends Held {
 
 
-    private int ausdauer=5;
-    Krieger(int pStaerke, int pAngriffswert, int pLebenspunkte){
-        super(pStaerke,pAngriffswert,pLebenspunkte);
+    private final int ausdauer = 20;
+
+    Krieger(int pStaerke, int pAngriffswert, int pLebenspunkte) {
+        super(pStaerke, pAngriffswert, pLebenspunkte);
 
     }
 
-    public int angriffswertBerechnen(){
-        return (getWaffe().bonusBerechnen()+getStearke())*ausdauer;
+    public int angriffswertBerechnen() {
+        return (getWaffe().bonusBerechnen() + getStearke()) + ausdauer;
     }
 }

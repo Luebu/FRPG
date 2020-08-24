@@ -1,54 +1,60 @@
 public class Held {
-
-    private Waffe meineWaffe=new Waffe();
     String name;
+    private Waffe meineWaffe = new Waffe();
     private int staerke;
     private int angriffswert;
     private int lebenspunkte;
 
-    Held (int pStaerke,int pAngriffswert, int pLebenspunkte){
-        staerke= pStaerke;
-        angriffswert= pAngriffswert;
-        lebenspunkte= pLebenspunkte;
+    Held(int pStaerke, int pAngriffswert, int pLebenspunkte) {
+        staerke = pStaerke;
+        angriffswert = pAngriffswert;
+        lebenspunkte = pLebenspunkte;
 
 
     }
-    public void recieveWeapon(){
+
+    public void recieveWeapon() {
 
         meineWaffe.setMat("Diamant");
     }
-    public int angreifen(Monster g, Kampfregel r){
+
+    public int angreifen(Monster g, Kampfregel r) {
 
         return 0;
     }
-    public Waffe getWaffe(){
+
+    public Waffe getWaffe() {
         return meineWaffe;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void setName(String pName){
-        name=pName;
+
+    public void setName(String pName) {
+        name = pName;
     }
 
-    public int getStearke(){
+    public int getStearke() {
         return staerke;
     }
-    public void setStearke(int pStearke){
-        staerke=pStearke;
+
+    public void setStearke(int pStearke) {
+        staerke = pStearke;
     }
 
-    public int getAngriffswert(){
+    public int getAngriffswert() {
         return angriffswert;
     }
 
-    public int getLebenspunkte(){
+    public int getLebenspunkte() {
         return lebenspunkte;
     }
-    public void setLebenspunkte(int pLp){
-        lebenspunkte=pLp;
+
+    public void setLebenspunkte(int pLp) {
+        lebenspunkte = pLp;
     }
+
     public void recieveDamage(int pDmg) {
         if (lebenspunkte - pDmg > 0) {
             lebenspunkte = lebenspunkte - pDmg;

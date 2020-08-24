@@ -1,10 +1,11 @@
-public class Wuerfel{
+public class Wuerfel {
     int anzahlSeiten;
 
-    Wuerfel(int pZ){
-        anzahlSeiten=pZ;
+    Wuerfel(int pZ) {
+        anzahlSeiten = pZ;
     }
-    public int wuerfeln(){
-        return (int)(Math.random()*anzahlSeiten);
+
+    public int wuerfeln() {
+        return (int) (Math.random() * anzahlSeiten);
     }
 }
