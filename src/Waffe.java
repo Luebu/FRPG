@@ -7,14 +7,18 @@ public class Waffe{
         material=pMat;
     }
     public int bonusBerechnen(){
-        switch(material){
-            case "Holz":
-                return magie+1;
-            case "Diamant":
-                return magie+3;
-            default:
-                return 0;
+        if(material==null){
+            return magie+0;
+        }else{
+            switch(material){
+                case "Holz":
+                    return magie+1;
+                case "Diamant":
+                    return magie+3;
+                default:
+                    return 0;
 
+            }
         }
     }
 }

@@ -8,6 +8,10 @@ public class Monster {
         angriffswert=(int)(Math.random()*20)+10;
     }
 
+    public int getAngriffswert() {
+        return angriffswert;
+    }
+
     public void recieveDamage(int pDmg){
         if(lebenspunkte-pDmg>0){
             lebenspunkte=lebenspunkte-pDmg;
