@@ -20,7 +20,7 @@ public class Monster {
         if(lebenspunkte-pDmg>0){
             lebenspunkte=lebenspunkte-pDmg;
         }else{
-            System.out.println("YOU DIED");
+            System.out.println("Du hast Gewonnen!!");
             System.exit(1);
         }
     }

@@ -13,16 +13,16 @@ public class Held {
 
 
     }
+    public void recieveWeapon(){
 
+        meineWaffe.setMat("Diamant");
+    }
     public int angreifen(Monster g, Kampfregel r){
 
         return 0;
     }
     public Waffe getWaffe(){
         return meineWaffe;
-    }
-    public int angriffswertBerechnen(){
-        return 0;
     }
 
     public String getName(){
@@ -48,5 +48,13 @@ public class Held {
     }
     public void setLebenspunkte(int pLp){
         lebenspunkte=pLp;
+    }
+    public void recieveDamage(int pDmg) {
+        if (lebenspunkte - pDmg > 0) {
+            lebenspunkte = lebenspunkte - pDmg;
+        } else {
+            System.out.println("YOU DIED");
+            System.exit(1);
+        }
     }
 }
