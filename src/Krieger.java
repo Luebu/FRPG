@@ -1,7 +1,7 @@
 public class Krieger extends Held{
 
 
-    private int ausdauer=10;
+    private int ausdauer=5;
     Krieger(int pStaerke, int pAngriffswert, int pLebenspunkte){
         super(pStaerke,pAngriffswert,pLebenspunkte);
 
